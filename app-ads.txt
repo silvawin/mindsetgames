@@ -1,0 +1,2 @@
+# app-ads.txt for mindsetgames
+google.com, pub-8024197637736433, DIRECT, f08c47fec0942fa0
