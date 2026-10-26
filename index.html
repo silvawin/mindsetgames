@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SilvaGames — Independent game studio</title>
+<meta name="description" content="SilvaGames makes games for iPhone and iPad that are quick to pick up and made to be played again and again.">
+<meta name="theme-color" content="#07080d">
+<meta property="og:title" content="SilvaGames — Independent game studio">
+<meta property="og:description" content="SilvaGames makes games for iPhone and iPad that are quick to pick up and made to be played again and again.">
+<meta property="og:type" content="website">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<style>:root{--a1:hsl(312 88% 60%);--a2:hsl(348 86% 58%)}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+:root{--bg:#07080d;--bg2:#0d0f17;--panel:rgba(255,255,255,.04);--panel2:rgba(255,255,255,.07);--line:rgba(255,255,255,.09);--line2:rgba(255,255,255,.16);--text:#f3f5fb;--muted:#a6adbf;--faint:#727a8f;--radius:20px}
+a{color:inherit}
+img{max-width:100%;display:block}
+h1,h2,h3{letter-spacing:-.025em;line-height:1.1;margin:0}
+p{margin:0}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:12px;z-index:100;padding:10px 16px;border-radius:10px;background:#fff;color:#000;font-weight:700}
+.skip:focus{left:12px}
+:focus-visible{outline:2px solid var(--a1);outline-offset:3px;border-radius:8px}
+.bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.blob{position:absolute;width:62vmax;height:62vmax;border-radius:50%;filter:blur(90px);opacity:.28}
+.b1{top:-28vmax;left:-18vmax;background:radial-gradient(circle,var(--a1),transparent 62%)}
+.b2{top:12vmax;right:-30vmax;background:radial-gradient(circle,var(--a2),transparent 62%);opacity:.22}
+.gridlines{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 30%,transparent 75%);opacity:.5}
+.nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(16px);-webkit-backdrop-filter:saturate(160%) blur(16px);background:rgba(7,8,13,.72);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:24px;height:68px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.02em;text-decoration:none;font-size:17px;white-space:nowrap}
+.mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#fff;font-size:14px;font-weight:900;background:linear-gradient(135deg,var(--a1),var(--a2));box-shadow:0 8px 24px -8px var(--a1),inset 0 1px 0 rgba(255,255,255,.35)}
+.nav nav{display:flex;gap:4px;margin-left:auto}
+.nav nav a{padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:550}
+.nav nav a:hover{color:var(--text);background:var(--panel2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:50px;padding:0 24px;border-radius:14px;font-weight:700;font-size:15.5px;text-decoration:none;color:#fff;background:linear-gradient(135deg,var(--a1),var(--a2));box-shadow:0 12px 32px -12px var(--a1),inset 0 1px 0 rgba(255,255,255,.3);transition:transform .15s ease,filter .15s ease;border:0}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.btn.ghost{background:var(--panel2);box-shadow:inset 0 0 0 1px var(--line2);color:var(--text)}
+.btn.sm{height:40px;padding:0 16px;font-size:14px;border-radius:12px}
+.btn.disabled{background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);color:var(--faint);pointer-events:none}
+.kicker{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:40px 0 48px;color:var(--muted);font-size:14px}
+.foot{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:flex-start;justify-content:space-between}
+.foot nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+.foot a{color:var(--muted);text-decoration:none}.foot a:hover{color:var(--text)}
+.foot small{display:block;margin-top:10px;color:var(--faint)}
+@media (max-width:760px){.nav nav{display:none}.nav .btn{margin-left:auto}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.hero{padding:88px 0 72px}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 10px;border-radius:99px;background:var(--panel2);box-shadow:inset 0 0 0 1px var(--line2);color:var(--muted);font-size:13.5px;font-weight:600}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--a1);box-shadow:0 0 0 4px color-mix(in srgb,var(--a1) 25%,transparent)}
+.hero h1{margin:22px 0 20px;font-size:clamp(44px,7vw,84px);font-weight:900;letter-spacing:-.045em;line-height:.98}
+.grad{background:linear-gradient(100deg,#fff 10%,var(--a1) 55%,var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:600px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.chips{display:flex;flex-wrap:wrap;gap:10px 22px;margin:34px 0 0;padding:0;list-style:none;color:var(--muted);font-size:14px;font-weight:600}
+.chips li{display:flex;align-items:center;gap:8px}
+.chips svg{color:var(--a1)}
+.hero-art{position:relative;height:440px}
+.tile{position:absolute;width:62%;aspect-ratio:3/4;border-radius:28px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.8),inset 0 0 0 1px rgba(255,255,255,.12);background:linear-gradient(160deg,hsl(var(--h) 80% 58%),hsl(calc(var(--h) + 60) 75% 32%));animation:float 7s ease-in-out infinite}
+.tile::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.35),transparent 45%),repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 2px,transparent 2px 14px)}
+.tile .ic{position:absolute;left:22px;bottom:70px;width:76px;height:76px;border-radius:20px;overflow:hidden;box-shadow:0 12px 28px -8px rgba(0,0,0,.6);z-index:1;display:grid;place-items:center;background:rgba(0,0,0,.25);font-weight:900;font-size:26px;color:#fff}
+.tile .nm{position:absolute;left:22px;right:22px;bottom:26px;z-index:1;font-weight:800;font-size:18px;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.t1{left:2%;top:40px;transform:rotate(-8deg)}
+.t2{right:0;top:0;transform:rotate(6deg);animation-delay:-2.5s}
+.t3{left:22%;top:150px;transform:rotate(-1deg);animation-delay:-5s;z-index:2}
+@keyframes float{50%{translate:0 -12px}}
+.section{padding:96px 0}
+.sec-head{max-width:700px;margin-bottom:44px}
+.sec-head h2{margin:12px 0 14px;font-size:clamp(32px,4.4vw,52px);font-weight:850}
+.sec-head p{color:var(--muted);font-size:18px}
+.games{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));gap:22px}
+.game{display:flex;flex-direction:column;border-radius:var(--radius);background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+.game:hover{transform:translateY(-4px);box-shadow:inset 0 0 0 1px var(--line2),0 30px 60px -30px rgba(0,0,0,.9)}
+.game-art{position:relative;height:190px;display:grid;place-items:center;background:linear-gradient(150deg,hsl(var(--h) 85% 56%),hsl(calc(var(--h) + 70) 70% 26%))}
+.game-art::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 15%,rgba(255,255,255,.3),transparent 40%),repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 16px)}
+.game-art img,.game-art .ini{position:relative;z-index:1;width:104px;height:104px;border-radius:26px;box-shadow:0 18px 40px -12px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.2)}
+.game-art .ini{display:grid;place-items:center;background:rgba(0,0,0,.22);color:#fff;font-weight:900;font-size:36px;letter-spacing:-.03em}
+.game-body{display:flex;flex-direction:column;gap:12px;padding:24px;flex:1}
+.game-meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 11px;border-radius:99px;font-size:12px;font-weight:700;background:var(--panel2);color:var(--muted)}
+.pill.live{color:#7ee2a8;background:rgba(46,204,113,.12)}
+.pill.live::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.game h3{font-size:24px;font-weight:850}
+.game p{color:var(--muted);flex:1}
+.game .btn{align-self:flex-start;margin-top:6px}
+.empty{padding:40px;border-radius:var(--radius);background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);color:var(--muted);text-align:center}
+.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:18px}
+.value{padding:28px;border-radius:var(--radius);background:linear-gradient(180deg,var(--panel2),var(--panel));box-shadow:inset 0 0 0 1px var(--line)}
+.value .vi{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;margin-bottom:18px;color:#fff;background:linear-gradient(135deg,var(--a1),var(--a2));box-shadow:0 10px 24px -10px var(--a1)}
+.value h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.value p{color:var(--muted);font-size:15px}
+.about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:48px;align-items:start}
+.about-text p{color:var(--muted);font-size:18px;margin-top:16px}
+.facts{border-radius:var(--radius);background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);padding:8px 24px}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.facts div:last-child{border-bottom:0}
+.facts dt{color:var(--muted);font-size:14px}.facts dd{margin:0;font-weight:700;text-align:right;overflow-wrap:anywhere}
+.faq{display:grid;gap:12px;max-width:860px}
+.faq details{border-radius:16px;background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);padding:0 22px}
+.faq details[open]{background:var(--panel2);box-shadow:inset 0 0 0 1px var(--line2)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 0;font-weight:750;font-size:17px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--panel2);color:var(--text);font-size:20px;font-weight:500;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);padding:0 0 22px}
+.contact{margin-top:56px;position:relative;overflow:hidden;border-radius:28px;padding:56px;background:linear-gradient(135deg,color-mix(in srgb,var(--a1) 32%,#0b0d14),color-mix(in srgb,var(--a2) 26%,#0b0d14));box-shadow:inset 0 0 0 1px var(--line2)}
+.contact::after{content:"";position:absolute;width:420px;height:420px;right:-120px;top:-160px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.18),transparent 60%)}
+.contact h2{font-size:clamp(28px,4vw,44px);font-weight:850;max-width:640px}
+.contact p{color:rgba(255,255,255,.78);margin:14px 0 28px;max-width:560px;font-size:17px}
+.contact .btn{background:#fff;color:#0b0d14;box-shadow:0 14px 30px -14px rgba(0,0,0,.6)}
+@media (max-width:900px){.hero-in,.about{grid-template-columns:1fr}.hero-art{height:360px;max-width:440px}.hero{padding-top:56px}}
+@media (max-width:560px){.section{padding:72px 0}.contact{padding:36px 26px}.hero-art{height:300px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="gridlines"></span></div>
+<header class="nav"><div class="wrap nav-in">
+<a class="brand" href="./"><span class="mark">S</span><span>SilvaGames</span></a>
+<nav aria-label="Main"><a href="#games">Games</a><a href="#studio">Studio</a><a href="#support">Support</a><a href="privacy.html">Privacy</a></nav>
+<a class="btn sm ghost" href="mailto:support@silvagames.cam">Contact</a>
+</div></header>
+<main id="main">
+<section class="hero"><div class="wrap hero-in">
+<div>
+<span class="eyebrow"><i></i>Independent game studio</span>
+<h1 class="grad">SilvaGames</h1>
+<p class="lead">SilvaGames makes games for iPhone and iPad that are quick to pick up and made to be played again and again.</p>
+<div class="cta"><a class="btn" href="#games">Explore our games</a><a class="btn ghost" href="#support">Player support</a></div>
+<ul class="chips"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Made for iPhone &amp; iPad</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Independent studio</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>1 game</li></ul>
+</div>
+<div class="hero-art" aria-hidden="true"><div class="tile t1" style="--h:271"><span class="ic">MB</span><span class="nm">Money Ball</span></div></div>
+</div></section>
+
+<section id="games" class="section"><div class="wrap">
+<header class="sec-head"><span class="kicker">Our games</span><h2>Made to be played</h2><p>Every game we ship is built for touch, tuned for short sessions, and polished until it feels right.</p></header>
+<div class="games"><article class="game">
+<div class="game-art" style="--h:271"><span class="ini">MB</span></div>
+<div class="game-body">
+<div class="game-meta"><span class="pill">Coming soon</span></div>
+<h3>Money Ball</h3>
+<p>A new game from SilvaGames for iPhone and iPad.</p>
+<span class="btn sm disabled">Coming soon to the App Store</span>
+</div>
+</article></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<header class="sec-head"><span class="kicker">What we stand for</span><h2>How we make games</h2></header>
+<div class="values"><div class="value"><span class="vi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.6H20l-4.9 3.6 1.9 5.8-5-3.6-5 3.6 1.9-5.8L4 8.6h6.1z"/></svg></span><h3>Built for touch</h3><p>Controls designed for iPhone and iPad from the very first prototype.</p></div><div class="value"><span class="vi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Fair to players</h3><p>Clear choices, honest rewards, and no tricks to keep you playing.</p></div><div class="value"><span class="vi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></span><h3>Polished and updated</h3><p>We keep refining our games long after launch.</p></div><div class="value"><span class="vi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.6-9.3 9-9.3 9z"/></svg></span><h3>Respect for privacy</h3><p>We collect as little as possible and explain exactly what in our privacy policy.</p></div></div>
+</div></section>
+
+<section id="studio" class="section"><div class="wrap about">
+<div class="about-text"><span class="kicker">The studio</span><h2 style="font-size:clamp(32px,4.4vw,52px);font-weight:850;margin-top:12px">About SilvaGames</h2><p>SilvaGames is an independent studio creating games for iPhone and iPad. We keep our team small and our standards high, so every game gets the attention it deserves.</p><p>We design for touch first, sweat the details, and keep improving our games with each update based on what players tell us.</p></div>
+<dl class="facts">
+<div><dt>Platforms</dt><dd>iPhone &amp; iPad</dd></div>
+<div><dt>Games</dt><dd>1</dd></div>
+<div><dt>Available on</dt><dd>App Store (soon)</dd></div>
+<div><dt>Contact</dt><dd><a href="mailto:support@silvagames.cam">support@silvagames.cam</a></dd></div>
+</dl>
+</div></section>
+
+<section id="support" class="section"><div class="wrap">
+<header class="sec-head"><span class="kicker">Player support</span><h2>Questions, answered</h2></header>
+<div class="faq"><details open><summary>How do I get help with a game?</summary><p>Email us at support@silvagames.cam. Tell us which game, your device model and iOS version, and what happened. Screenshots help a lot.</p></details><details><summary>Can I turn off personalized ads?</summary><p>Yes. Decline when a game asks to track you, or go to Settings › Privacy &amp; Security › Tracking on your iPhone or iPad. You may still see ads, but they won&#39;t be personalized.</p></details><details><summary>How do I delete my data?</summary><p>Our games don&#39;t require an account. Deleting a game removes the data it stored on your device. To ask us to delete anything else we hold, such as support emails, write to support@silvagames.cam.</p></details><details><summary>Which devices are supported?</summary><p>Our games are made for iPhone and iPad. Each game&#39;s App Store page lists the minimum iOS version it needs.</p></details></div>
+<div class="contact"><h2>Something not working, or have an idea?</h2><p>We read every message. Write to us and include the game name and your device so we can help faster.</p><a class="btn" href="mailto:support@silvagames.cam">Email support@silvagames.cam</a></div>
+</div></section>
+</main>
+<footer class="site"><div class="wrap foot">
+<div><a class="brand" href="./"><span class="mark">S</span><span>SilvaGames</span></a><small>© 2026 SilvaGames. All rights reserved.</small><small>Apple, iPhone and iPad are trademarks of Apple Inc. App Store is a service mark of Apple Inc.</small></div>
+<nav aria-label="Footer"><a href="./#games">Games</a><a href="./#support">Support</a><a href="privacy.html">Privacy Policy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Terms of Use (Apple EULA)</a><a href="mailto:support@silvagames.cam">support@silvagames.cam</a></nav>
+</div></footer>
+</body>
+</html>
